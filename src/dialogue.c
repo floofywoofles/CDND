@@ -13,3 +13,20 @@ void setDialogue(Dialogue *d, char *text)
 
     sprintf(d->text, "%s", text);
 }
+
+void addOption(Dialogue *d, Option opt)
+{
+    if (d->options == NULL)
+    {
+        d->options = malloc(1 * sizeof(Option));
+        d->optionsSize = 1;
+    }
+
+    if (d->optionsSize > sizeof(d->options) + 1)
+    {
+        d->options = realloc(d->options, d->optionsSize + 1);
+        d->optionsSize += 1;
+    }
+
+    d->options[d->optionsSize] = opt;
+};
