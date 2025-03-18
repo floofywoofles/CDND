@@ -10,7 +10,7 @@ void setDialogue(Dialogue *d, char *text)
         printf("Text exceeds max size\n");
         exit(EXIT_FAILURE);
     }
-
+    d->text = (char *)malloc(MAX_SIZE * sizeof(char));
     sprintf(d->text, "%s", text);
 }
 
@@ -28,5 +28,5 @@ void addOption(Dialogue *d, Option opt)
         d->optionsSize += 1;
     }
 
-    d->options[d->optionsSize] = opt;
-};
+    d->options[d->optionsSize - 1] = opt;
+}

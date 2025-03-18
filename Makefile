@@ -1,7 +1,10 @@
 CCFLAGS=-Wall -pedantic -Werror
+DFLAGS=-Wall -pedantic -Werror -g
 CC=gcc
 
-all: build
 
 build:
-	$(CC) $(CCFLAGS) ./src/*.c -o *.c -o cdnd.out
+	$(CC) $(CCFLAGS) ./src/*.c -o cdnd.out
+
+debug:
+	$(CC) $(DFLAGS) ./src/*.c -o debug.out
