@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "dialogue.h": "c"
-    }
+    },
+    "C_Cpp.default.compilerPath": "/bin/gcc"
 }

@@ -1,0 +1,24 @@
+{
+    "tree": [
+        {
+            "root": {
+                "dialogueText": "You enter a mansion with a set of stairs in front of you and two hallways to your left and right. What do you want to do?",
+                "options": [
+                    {
+                        "text": "Go up the stairs",
+                        "treeIndex": 1
+                    },
+                    {
+                        "text": "Go towards the left hallway",
+                        "treeIndex": 2
+                    },
+                    {
+                        "text": "Go towards the right hallway",
+                        "treeIndex": 3
+                    }
+                ]
+            },
+            "treeIndex": 0
+        }
+    ]
+}

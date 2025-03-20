@@ -5,7 +5,8 @@
 
 typedef struct
 {
-
+    DNode nodes[5];
+    Dialogue dialogueOption;
 } DNode;
 
 #endif
